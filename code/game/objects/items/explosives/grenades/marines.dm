@@ -147,6 +147,20 @@
 		var/turf/turf_to_flame = t
 		turf_to_flame.ignite(rand(burn_intensity*(0.5-int_var), burn_intensity*(0.5+int_var)) + rand(burn_intensity*(0.5-int_var), burn_intensity*(0.5+int_var)), rand(burn_duration*(0.5-int_var), burn_duration*(0.5-int_var)) + rand(burn_duration*(0.5-int_var), burn_duration*(0.5-int_var)), colour, burn_damage, fire_stacks)
 
+/obj/item/explosive/grenade/incendiary/death
+	name = "\improper M42 HIDP incendiary grenade"
+	desc = "The M42 HIDP is a modified version of the M40 HIDP issued almost exclusively to deathsquads. It detonates with a wider radius, higher temperature and has it's timer set to just 2 seconds!"
+	icon_state = "grenade_fire_death"
+	det_time = 20	//timer is low to add some risk while using this nade
+	item_state = "grenade_fire_death"
+	hud_state = "grenade_fire_death"
+	underslug_launchable = TRUE
+	icon_state_mini = "grenade_orange"
+
+/obj/item/explosive/grenade/incendiary/death/prime()
+	flame_radius(4, get_turf(src), 30, 25, 30, 15, 0.5, 0.5, "blue")
+	playsound(loc, 'sound/effects/incendiary_explode.ogg', 35, TRUE, 4)
+	qdel(src)
 
 /obj/item/explosive/grenade/incendiary/molotov
 	name = "\improper improvised firebomb"
