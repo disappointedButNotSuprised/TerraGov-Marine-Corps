@@ -170,6 +170,7 @@
 			/obj/item/explosive/grenade/frag = 600,
 			/obj/item/explosive/grenade/frag/m15 = 30,
 			/obj/item/explosive/grenade/incendiary = 50,
+			/obj/item/explosive/grenade/incendiary/death = 5,
 			/obj/item/explosive/grenade/cloakbomb = 25,
 			/obj/item/explosive/grenade/drainbomb = 10,
 			/obj/item/explosive/grenade/mirage = 100,
