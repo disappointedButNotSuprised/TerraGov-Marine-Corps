@@ -15640,10 +15640,10 @@
 "ocY" = (
 /obj/structure/closet/crate/radiation,
 /obj/item/stack/sheet/mineral/uranium{
-	amount = 30
+	amount = 10
 	},
 /obj/item/stack/sheet/mineral/uranium{
-	amount = 30;
+	amount = 10;
 	pixel_y = -5
 	},
 /turf/open/floor/plating,
