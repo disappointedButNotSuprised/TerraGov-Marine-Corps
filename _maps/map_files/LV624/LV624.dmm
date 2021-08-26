@@ -15637,6 +15637,14 @@
 	dir = 4
 	},
 /area/lv624/lazarus/chapel)
+"ocY" = (
+/obj/structure/closet/crate/radiation,
+/obj/item/stack/sheet/mineral/uranium,
+/obj/item/stack/sheet/mineral/uranium{
+	pixel_y = -5
+	},
+/turf/open/floor/plating,
+/area/space)
 "odc" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/machinery/floodlight/colony,
@@ -33115,7 +33123,7 @@ acO
 bjH
 bjH
 blj
-xSy
+ocY
 bjH
 bjH
 bjH
